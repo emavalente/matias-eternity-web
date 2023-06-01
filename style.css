@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Nite Club";
+  src: url("./assets/fonts/Nite\ Club.TTF");
+}
+
 body,
 header {
-  background-color: #fafaf9;
+  background-color: #fff;
   font-family: "Poppins", cursive;
 }
 
@@ -38,6 +43,15 @@ body {
   background-color: #141414;
   color: #fafaf9;
   text-align: center;
+}
+
+.navbar__logo {
+  font-family: "Nite Club";
+  letter-spacing: 8px;
+  font-size: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
 .navbar__branch {
@@ -213,7 +227,6 @@ body {
 
 /* Carrousel */
 .carrousel__container {
-  background-color: aqua;
   transition: all 0.5s ease;
   transform: translateX(0%);
 }
@@ -235,25 +248,40 @@ body {
   background-color: #cac3a1;
 }
 
-.services {
-  background-color: #cac3a1;
-}
-
 .services__card {
   max-width: 320px;
 }
 
 /* Footer */
 .footer {
+  background-color: #141414;
   font-size: 0.8rem;
   font-weight: 300;
+  color: #fafaf9;
+}
+
+.footer__logo {
+  font-family: "Nite Club";
+  letter-spacing: 8px;
+  font-size: 2rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer__redes a ion-icon {
+  font-size: 2rem;
+  margin: 0 16px;
+}
+
+.footer__redes a ion-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 780px) {
   .carrousel__container p {
     font-size: 1.5rem;
   }
-}
-
-@media screen and (min-width: 1280px) {
 }

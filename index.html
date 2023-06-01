@@ -16,7 +16,7 @@
   <body>
     <nav class="navbar fixed w-full">
       <div class="navbar__promotion w-full">
-        <p>10% DE DESCUENTO EN PAGOS CON EFECTIVO</p>
+        <p>10% DE DESCUENTO EN EFECTIVO HASTA EL 25/9</p>
       </div>
       <div
         class="w-full h-16 mx-auto relative flex justify-between items-center xl:w-[1296px]"
@@ -36,10 +36,10 @@
               <a href="./index.html">inicio</a>
             </li>
             <li class="my-8 py-4 px-8 relative">
-              <a href="#">servicios</a>
+              <a href="#services">servicios</a>
             </li>
             <li class="my-8 py-4 px-8 relative">
-              <a href="#">nosotros</a>
+              <a href="#about">nosotros</a>
             </li>
             <li class="my-8 py-4 px-8 relative">
               <a href="./contact.html">contacto</a>
@@ -49,16 +49,12 @@
         <div class="navbar__list ml-4 hidden xl:flex items-center">
           <ul class="flex justify-between items-center w-56">
             <li class="mr-8 relative"><a href="./index.html">inicio</a></li>
-            <li class="mr-8 relative"><a href="#">servicios</a></li>
-            <li class="mr-8 relative"><a href="#">nosotros</a></li>
+            <li class="mr-8 relative"><a href="#services">servicios</a></li>
+            <li class="mr-8 relative"><a href="#about">nosotros</a></li>
             <li class="mr-8 relative"><a href="./contact.html">contacto</a></li>
           </ul>
         </div>
-        <img
-          class="navbar__branch w-32 absolute md:w-40"
-          src="./assets/img/svg/logo_eternity.svg"
-          alt="Eternity logo"
-        />
+        <h1 class="navbar__logo absolute">ETERNITY</h1>
         <div class="navbar__cart absolute flex items-center">
           <ion-icon name="cart-outline"></ion-icon>
         </div>
@@ -95,7 +91,7 @@
         <div class="products__otainer text-center">ACA VAN LOS PERFUMES</div>
       </section>
 
-      <section class="services w-full py-8 mx-auto mb-24 xl:w-[1296px]">
+      <section class="w-full py-8 mx-auto mb-24 xl:w-[1296px]" id="services">
         <div class="mb-8">
           <h2 class="text-center">SERVICIOS</h2>
           <hr />
@@ -111,8 +107,10 @@
               class="w-16 mb-4"
               alt="camion en velocidad"
             />
-            <h2>ENVIOS SIN CARGO</h2>
-            <p class="text-center">COMPRAS MAYORES A $8000</p>
+            <h2 class="text-center">ENVIOS SIN CARGO</h2>
+            <p class="text-center text-sm font-light">
+              COMPRAS MAYORES A $8000
+            </p>
           </div>
           <div
             class="services__card flex flex-col justify-center items-center p-8"
@@ -122,8 +120,8 @@
               class="w-16 mb-4"
               alt="simbolo de porcentaje"
             />
-            <h2>DESCUENTOS</h2>
-            <p class="text-center">EN PAGOS CON EFECTIVO</p>
+            <h2 class="text-center">DESCUENTOS Y PROMOCIONES</h2>
+            <p class="text-center text-sm font-light">PAGO EN EFECTIVO</p>
           </div>
           <div
             class="services__card flex flex-col justify-center items-center p-8"
@@ -133,40 +131,59 @@
               class="w-16 mb-4"
               alt="telefono y reloj"
             />
-            <h2>ATENCION</h2>
-            <p class="text-center">LUNES A VIERNES 8 A 22HS</p>
+            <h2 class="text-center">ATENCION</h2>
+            <p class="text-center text-sm font-light">
+              LUNES A VIERNES 8 A 22HS
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="w-full mx-auto xl:w-[1296px]">
+      <section class="w-full mx-auto mb-24 xl:w-[1296px]" id="about">
         <div class="mb-16">
           <h2 class="text-center">NOSOTROS</h2>
           <hr />
         </div>
-        <div class="aboutContainer">ACA VA EL TEXTO NOSOTROS</div>
+        <div
+          class="aboutContainer px-8 text-center flex flex-col items-center lg:flex-row-reverse lg:items-start"
+        >
+          <p class="text-sm font-light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            mollitia, distinctio corrupti optio nostrum atque, ipsum magnam qui
+            aliquam facere iure eius nemo? Possimus beatae hic perspiciatis
+            voluptatem quod laudantium.
+          </p>
+          <img
+            src="./assets/img/flowers/flores_02.jpg"
+            class="w-56"
+            alt="flores amarillas"
+          />
+        </div>
       </section>
     </main>
 
-    <!--<footer class="footer p-8 w-full h-64 md:mx-auto xl:w-5/6">
-      <hr class="mb-16" />
-      <div>
-        <h1 class="titles">ETERNITY Fragancias</h1>
-        <p>Distribuidor oficial en Paraná - Entre Ríos</p>
-        <p>tel. 3435 366 383 // 3434 629 220</p>
+    <footer class="footer text-center p-8 pb-4 w-full md:mx-auto xl:w-[1296px]">
+      <hr class="mb-8" />
+      <div class="flex flex-col justify-evenly">
+        <div class="mb-8">
+          <h2 class="footer__logo">ETERNITY</h2>
+          <h2>FRAGANCIAS</h2>
+          <p class="mb-4">
+            Matias Apellido Distribuidor oficial en Paraná - Entre Ríos
+          </p>
+          <h3 class="font-bold">ATENCION AL CLIENTE</h3>
+          <p>tel. 3435 366 383 // 3434 629 220</p>
+        </div>
+        <div class="mb-8">
+          <a href="#">Ver Catalogo oficial</a>
+        </div>
+        <div class="footer__redes mb-8">
+          <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
       </div>
-      <div>
-        <h2>Nuestras Redes</h2>
-        <a href="">Facebook</a>
-        <a href="">Intagram</a>
-      </div>
-      <div>
-        <a href="">Ver Catalogo oficial</a>
-        <a href=""></a>
-      </div>
-      <h6>copyright &copy ETERNITY - Matias Apellido Distribuidor oficial</h6>
-      <h6>SITIO CREADO POR EMANUEL VALENTE</h6>
-    </footer>-->
+      <h6>Developed by <a href="#">EMANUEL VALENTE</a></h6>
+    </footer>
 
     <!-- SCRIPTS -->
     <script src="https://cdn.tailwindcss.com"></script>
