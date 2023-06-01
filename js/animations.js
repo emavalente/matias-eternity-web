@@ -3,37 +3,28 @@ const slideMenu = document.querySelector("#slide");
 const carrousel = document.querySelector(".carrousel__container");
 const carrouselBtns = document.querySelectorAll(".carrousel__point");
 
-// Carrousel
-// window.onload = () => {
-//   setInterval(() => {
-//     console.log("Volvi a entrar al intervalo");
-//     carrouselBtns.forEach((btn, i) => {
-//       contain = btn.classList.contains("carrousel__point--active");
-//       if (!contain) {
-//         let moving = i * -50;
-//         console.log(moving);
-//         carrousel.style.transform = `translateX(${moving}%)`;
-//         carrouselBtns.forEach((btn) => {
-//           btn.classList.remove("carrousel__point--active");
-//         });
-//         btn.classList.add("carrousel__point--active");
-//       }
-//     });
-//   }, 3000);
-// };
+window.onload = () => {
+  setInterval(() => {
+    let activeBtnIndex = -1;
 
-carrouselBtns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    let moving = i * -50;
-    carrousel.style.transform = `translateX(${moving}%)`;
+    for (let i = 0; i < carrouselBtns.length; i++) { 
+      if (btn.classList.contains("carrousel__point--active")) {
+        activeBtnIndex = index;
+        break;
+      }
+    }
 
-    carrouselBtns.forEach((btn) => {
-      btn.classList.remove("carrousel__point--active");
+    const nextBtnIndex = (activeBtnIndex + 1) % carrouselBtns.length;
+
+    carrouselBtns.forEach((btn, index) => {
+      const isActive = index === nextBtnIndex;
+      btn.classList.toggle("carrousel__point--active", isActive);
     });
 
-    btn.classList.add("carrousel__point--active");
-  });
-});
+    const moving = nextBtnIndex * -50;
+    carrousel.style.transform = `translateX(${moving}%)`;
+  }, 3000);
+};
 
 // Mobile Menu
 menuBtn.addEventListener("click", () => {
