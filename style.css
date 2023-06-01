@@ -1,0 +1,259 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+header {
+  background-color: #fafaf9;
+  font-family: "Poppins", cursive;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+body {
+  padding-top: 88px;
+}
+
+.titles {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Logo */
+.navbar {
+  background-color: #f2f2f2;
+  box-shadow: 0px 1px 7px #b6b4b4;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.navbar__promotion {
+  background-color: #141414;
+  color: #fafaf9;
+  text-align: center;
+}
+
+.navbar__branch {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Menu btn */
+.menubtn {
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menubtn__line {
+  display: block;
+  width: 70%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #4b4a4a;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menubtn__line--top {
+  animation-name: top-line-animation-close;
+}
+.menubtn__line--mid {
+  animation-name: mid-line-animation-close;
+}
+.menubtn__line--bott {
+  animation-name: bott-line-animation-close;
+}
+.menubtn.open .menubtn__line--top {
+  animation-name: top-line-animation;
+}
+.menubtn.open .menubtn__line--mid {
+  animation-name: mid-line-animation;
+}
+.menubtn.open .menubtn__line--bott {
+  animation-name: bott-line-animation;
+}
+
+/* Menu btn Animation */
+@keyframes top-line-animation {
+  50%,
+  100% {
+    transform: translateY(7px) rotate(-45deg);
+  }
+}
+
+@keyframes mid-line-animation {
+  20%,
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes bott-line-animation {
+  50%,
+  100% {
+    transform: translateY(-7px) rotate(45deg);
+  }
+}
+
+@keyframes top-line-animation-close {
+  0% {
+    transform: translateY(7px) rotate(-45deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes mid-line-animation-close {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50%,
+  100% {
+    width: 70%;
+    opacity: 1;
+  }
+}
+
+@keyframes bott-line-animation-close {
+  0% {
+    transform: translateY(-7px) rotate(45deg);
+  }
+  50%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* Slide */
+.navbar__slide {
+  z-index: 10;
+  top: 0;
+  left: -100%;
+  background-color: #f2f2f2;
+  box-shadow: 0px 8px 10px #424040;
+  transition: left 0.5s ease-in-out;
+}
+
+.navbar__slide--open {
+  left: 0;
+}
+
+.navbar__slide .navbar__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #272727;
+}
+
+.navbar__list:has(a) {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.navbar__list:has(li[class~="py-4"]) {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.navbar__list li[class~="py-4"] {
+  border-bottom: solid 1px #cac3a1;
+}
+
+.navbar__list li[class~="py-4"] a::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #cac3a1;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.navbar__list li[class~="mr-4"]:hover a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #cac3a1;
+}
+
+.navbar__list li[class~="py-4"]:hover a::after {
+  background-color: #424040;
+}
+
+/* Cart Icon */
+.navbar__cart {
+  right: 1rem;
+  cursor: pointer;
+}
+
+.navbar__cart ion-icon {
+  font-size: 2rem;
+  color: #4b4a4a;
+}
+
+/* Carrousel */
+.carrousel__container {
+  background-color: aqua;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel__container p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 3px 3px 2px #cac3a1;
+  font-family: "Poppins", sans-serif;
+}
+
+.carrousel__point {
+  box-shadow: 0px 3px 10px #b9b4b4;
+  cursor: pointer;
+}
+
+.carrousel__point--active {
+  background-color: #cac3a1;
+}
+
+.services {
+  background-color: #cac3a1;
+}
+
+.services__card {
+  max-width: 320px;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 780px) {
+  .carrousel__container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}

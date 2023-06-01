@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Eternity Fragancias</title>
+  </head>
+  <body class="pt-16">
+    <header class="w-full h-16 fixed flex justify-center">
+      <nav class="w-full relative flex justify-between items-center xl:w-5/6">
+        <button
+          id="menubtn"
+          class="menubtn w-10 h-10 py-2 mx-4 absolute flex flex-col justify-evenly items-center md:hidden"
+        >
+          <span class="menubtn__line menubtn__line--top"></span>
+          <span class="menubtn__line menubtn__line--mid"></span>
+          <span class="menubtn__line menubtn__line--bott"></span>
+        </button>
+        <div id="slice" class="navbar__slide w-64 h-screen absolute md:hidden">
+          <h2 class="navbar__title mt-2 mb-0 text-center">Menu</h2>
+          <ul class="navbar__list">
+            <li class="my-8 py-4 px-8 relative">
+              <a href="./index.html">inicio</a>
+            </li>
+            <li class="my-8 py-4 px-8 relative">
+              <a href="./products.html">productos</a>
+            </li>
+            <li class="my-8 py-4 px-8 relative">
+              <a href="./contact.html">contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__list ml-4 hidden md:block md:flex items-center">
+          <ul class="flex justify-between items-center w-56">
+            <li class="mr-4 relative"><a href="./index.html">inicio</a></li>
+            <li class="mr-4 relative"><a href="./products.html">productos</a></li>
+            <li class="mr-4 relative"><a href="./contact.html">contacto</a></li>
+          </ul>
+        </div>
+        <img class="navbar__branch w-32 absolute md:w-40" src="./img/logo_eternity.svg" alt="Eternity logo" />
+        <div class="navbar__cart mr-4 absolute flex items-center">
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <section class="categories w-full md:mx-auto md:flex xl:w-5/6"></section>
+    <footer></footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

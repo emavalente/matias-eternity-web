@@ -1,0 +1,7 @@
+API Json-server
+	Lista de productos
+	Permitirá generar GET para tomar productos
+	Permitira generar PATCH para actualizar precios y promos.
+
+
+

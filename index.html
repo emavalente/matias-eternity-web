@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Eternity Fragancias - Distribuidor oficial</title>
+  </head>
+  <body>
+    <nav class="navbar fixed w-full">
+      <div class="navbar__promotion w-full">
+        <p>10% DE DESCUENTO EN PAGOS CON EFECTIVO</p>
+      </div>
+      <div
+        class="w-full h-16 mx-auto relative flex justify-between items-center xl:w-[1296px]"
+      >
+        <button
+          id="menubtn"
+          class="menubtn w-10 h-10 py-2 mx-4 absolute flex flex-col justify-evenly items-center xl:hidden"
+        >
+          <span class="menubtn__line menubtn__line--top"></span>
+          <span class="menubtn__line menubtn__line--mid"></span>
+          <span class="menubtn__line menubtn__line--bott"></span>
+        </button>
+        <div id="slide" class="navbar__slide w-64 h-screen absolute xl:hidden">
+          <h2 class="navbar__title mt-2 mb-0 text-center">Menu</h2>
+          <ul class="navbar__list">
+            <li class="my-8 py-4 px-8 relative">
+              <a href="./index.html">inicio</a>
+            </li>
+            <li class="my-8 py-4 px-8 relative">
+              <a href="#">servicios</a>
+            </li>
+            <li class="my-8 py-4 px-8 relative">
+              <a href="#">nosotros</a>
+            </li>
+            <li class="my-8 py-4 px-8 relative">
+              <a href="./contact.html">contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__list ml-4 hidden xl:flex items-center">
+          <ul class="flex justify-between items-center w-56">
+            <li class="mr-8 relative"><a href="./index.html">inicio</a></li>
+            <li class="mr-8 relative"><a href="#">servicios</a></li>
+            <li class="mr-8 relative"><a href="#">nosotros</a></li>
+            <li class="mr-8 relative"><a href="./contact.html">contacto</a></li>
+          </ul>
+        </div>
+        <img
+          class="navbar__branch w-32 absolute md:w-40"
+          src="./assets/img/svg/logo_eternity.svg"
+          alt="Eternity logo"
+        />
+        <div class="navbar__cart absolute flex items-center">
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="carrousel w-full flex flex-col justify-center overflow-hidden xl:w-[1296px] xl: mx-auto"
+    >
+      <div class="carrousel__container w-[200%] mx-auto mb-4 flex flex-nowrap">
+        <img
+          src="./assets/img/banners/banner_01.png"
+          class="w-2/4"
+          alt="imagen de publicidad"
+        />
+
+        <img
+          src="./assets/img/banners/banner_03.png"
+          class="w-2/4"
+          alt="imagen de publicidad"
+        />
+      </div>
+      <ul class="w-full mb-4 flex justify-center">
+        <li class="carrousel__point w-4 h-4 mx-2 rounded-full"></li>
+        <li class="carrousel__point w-4 h-4 mx-2 rounded-full"></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="products w-full mx-auto mb-24 xl:w-[1296px]">
+        <div class="mb-16">
+          <h2 class="text-center">FRAGANCIAS</h2>
+          <hr />
+        </div>
+        <div class="products__otainer text-center">ACA VAN LOS PERFUMES</div>
+      </section>
+
+      <section class="services w-full py-8 mx-auto mb-24 xl:w-[1296px]">
+        <div class="mb-8">
+          <h2 class="text-center">SERVICIOS</h2>
+          <hr />
+        </div>
+        <div
+          class="grid grid-rows-1 grid-cols-1 row-auto gap-4 justify-items-center p-8 sm:grid-cols-3"
+        >
+          <div
+            class="services__card flex flex-col justify-center items-center p-8"
+          >
+            <img
+              src="./assets/img/icons/shipping.png"
+              class="w-16 mb-4"
+              alt="camion en velocidad"
+            />
+            <h2>ENVIOS SIN CARGO</h2>
+            <p class="text-center">COMPRAS MAYORES A $8000</p>
+          </div>
+          <div
+            class="services__card flex flex-col justify-center items-center p-8"
+          >
+            <img
+              src="./assets/img/icons/discount.png"
+              class="w-16 mb-4"
+              alt="simbolo de porcentaje"
+            />
+            <h2>DESCUENTOS</h2>
+            <p class="text-center">EN PAGOS CON EFECTIVO</p>
+          </div>
+          <div
+            class="services__card flex flex-col justify-center items-center p-8"
+          >
+            <img
+              src="./assets/img/icons/phone.png"
+              class="w-16 mb-4"
+              alt="telefono y reloj"
+            />
+            <h2>ATENCION</h2>
+            <p class="text-center">LUNES A VIERNES 8 A 22HS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full mx-auto xl:w-[1296px]">
+        <div class="mb-16">
+          <h2 class="text-center">NOSOTROS</h2>
+          <hr />
+        </div>
+        <div class="aboutContainer">ACA VA EL TEXTO NOSOTROS</div>
+      </section>
+    </main>
+
+    <!--<footer class="footer p-8 w-full h-64 md:mx-auto xl:w-5/6">
+      <hr class="mb-16" />
+      <div>
+        <h1 class="titles">ETERNITY Fragancias</h1>
+        <p>Distribuidor oficial en Paraná - Entre Ríos</p>
+        <p>tel. 3435 366 383 // 3434 629 220</p>
+      </div>
+      <div>
+        <h2>Nuestras Redes</h2>
+        <a href="">Facebook</a>
+        <a href="">Intagram</a>
+      </div>
+      <div>
+        <a href="">Ver Catalogo oficial</a>
+        <a href=""></a>
+      </div>
+      <h6>copyright &copy ETERNITY - Matias Apellido Distribuidor oficial</h6>
+      <h6>SITIO CREADO POR EMANUEL VALENTE</h6>
+    </footer>-->
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
