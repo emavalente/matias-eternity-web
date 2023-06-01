@@ -7,9 +7,9 @@ window.onload = () => {
   setInterval(() => {
     let activeBtnIndex = -1;
 
-    for (let i = 0; i < carrouselBtns.length; i++) { 
-      if (btn.classList.contains("carrousel__point--active")) {
-        activeBtnIndex = index;
+    for (let i = 0; i < carrouselBtns.length; i++) {
+      if (carrouselBtns[i].classList.contains("carrousel__point--active")) {
+        activeBtnIndex = i;
         break;
       }
     }
