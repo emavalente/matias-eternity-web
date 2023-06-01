@@ -77,7 +77,9 @@
         />
       </div>
       <ul class="w-full mb-4 flex justify-center">
-        <li class="carrousel__point w-4 h-4 mx-2 rounded-full"></li>
+        <li
+          class="carrousel__point carrousel__point--active w-4 h-4 mx-2 rounded-full"
+        ></li>
         <li class="carrousel__point w-4 h-4 mx-2 rounded-full"></li>
       </ul>
     </header>
@@ -87,8 +89,30 @@
         <div class="mb-16">
           <h2 class="text-center">FRAGANCIAS</h2>
           <hr />
+          <div
+            class="w-full mt-4 text-xs font-4 flex justify-evenly lg:w-[780px] lg:mx-auto"
+          >
+            <button>TODOS</button>
+            <button>HOMBRE</button>
+            <button>MUJER</button>
+            <button>ESPECIALES</button>
+          </div>
         </div>
-        <div class="products__otainer text-center">ACA VAN LOS PERFUMES</div>
+        <div
+          class="products__container px-8 grid grid-rows-auto grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+        >
+          <!-- <div class="card">
+            <img
+              src="./assets/img/products/IMG-20230418-WA0002.jpg"
+              class="card__image"
+              alt="imagen de perfume"
+            />
+            <h2 class="card__title">Titulo Producto</h2>
+            <p class="card__description">Descripción de producto aquí</p>
+            <p class="card__price">$ 4000</p>
+            <button class="card__btn">Agregar</button>
+          </div> -->
+        </div>
       </section>
 
       <section class="w-full py-8 mx-auto mb-24 xl:w-[1296px]" id="services">
@@ -195,6 +219,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./app.js"></script>
+    <script src="./js/animations.js" type="module"></script>
+    <script src="./js/functions.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>

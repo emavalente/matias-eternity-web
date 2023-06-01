@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Invictus",
+      "image": "./assets/img/products/invictus-1.jpg",
+      "price": 4000,
+      "description": "La descripción del producto va aquí",
+      "type": "Hombre"
+    },
+
+    {
+      "id": 2,
+      "title": "Olympea",
+      "image": "./assets/img/products/olympea.jpg",
+      "price": 5000,
+      "description": "La descripción del producto va aquí",
+      "type": "Hombre"
+    },
+
+    {
+      "id": 3,
+      "title": "Black XS",
+      "image": "./assets/img/products/black-xs.jpg",
+      "price": 3000,
+      "description": "La descripción del producto va aquí",
+      "type": "Hombre"
+    },
+
+    {
+      "id": 4,
+      "title": "212 Georgina Herrera",
+      "image": "./assets/img/products/212-georgina-herrera.jpg",
+      "price": 5000,
+      "description": "La descripción del producto va aquí",
+      "type": "Mujer"
+    },
+
+    {
+      "id": 5,
+      "title": "Flower by Kenzo",
+      "image": "./assets/img/products/flowers-by-kenzo.jpg",
+      "price": 3000,
+      "description": "La descripción del producto va aquí",
+      "type": "Mujer"
+    },
+
+    {
+      "id": 6,
+      "title": "Jadore Dior",
+      "image": "./assets/img/products/jadore.jpg",
+      "price": 4000,
+      "description": "La descripción del producto va aquí",
+      "type": "Mujer"
+    },
+
+    {
+      "id": 7,
+      "title": "Scandal",
+      "image": "./assets/img/products/scandal.jpg",
+      "price": 4000,
+      "description": "La descripción del producto va aquí",
+      "type": "Especiales"
+    },
+
+    {
+      "id": 8,
+      "title": "212 Heroes Forever Young",
+      "image": "./assets/img/products/212-heroes.jpg",
+      "price": 4000,
+      "description": "La descripción del producto va aquí",
+      "type": "Especiales"
+    }
+  ]
+}
