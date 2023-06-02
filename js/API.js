@@ -8,10 +8,9 @@ export const getProducts = async () => {
     }
 
     const products = await response.json();
-    console.log(products);
 
     return products;
   } catch (error) {
-    console.log("Error al descargar Productos");
+    console.warn(error);
   }
 };
