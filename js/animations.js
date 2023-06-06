@@ -20,23 +20,15 @@ menuBtn.addEventListener("click", () => {
 });
 
 function carrouselAnimation() {
-  let activeBtnIndex = -1;
-  // Get the active index
+  let contain;
   carrouselBtns.forEach((btn, i) => {
-    if (btn.classList.contains("carrousel__point--active")) {
-      activeBtnIndex = i;
+    contain = btn.classList.contains("carrousel__point--active");
+    if (!contain) {
+      let moving = i * -50;
+      carrousel.style.transform = `translateX(${moving}%)`;
     }
   });
-
-  // Calculate the next index - is not activate.
-  const nextBtnIndex = (activeBtnIndex + 1) % carrouselBtns.length;
-
-  // add and remove the active class on respective btn. Will be activate when the index is the next one to activate.
-  carrouselBtns.forEach((btn, index) => {
-    const Activate = index === nextBtnIndex;
-    btn.classList.toggle("carrousel__point--active", Activate);
+  carrouselBtns.forEach((btn) => {
+    btn.classList.toggle("carrousel__point--active");
   });
-
-  const moving = nextBtnIndex * -50;
-  carrousel.style.transform = `translateX(${moving}%)`;
 }
